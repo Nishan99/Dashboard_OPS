@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@layer base {
+  :root {
+    --background: 228 15% 8%;
+    --foreground: 210 20% 92%;
+
+    --card: 228 14% 11%;
+    --card-foreground: 210 20% 92%;
+
+    --popover: 228 14% 11%;
+    --popover-foreground: 210 20% 92%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 228 14% 16%;
+    --secondary-foreground: 210 20% 85%;
+
+    --muted: 228 12% 18%;
+    --muted-foreground: 215 15% 55%;
+
+    --accent: 260 60% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 60% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 55%;
+    --warning-foreground: 0 0% 10%;
+
+    --border: 228 12% 18%;
+    --input: 228 12% 18%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
+
+    --glass: 228 14% 12% / 0.6;
+    --glass-border: 228 12% 25% / 0.3;
+    --glow-primary: 217 91% 60% / 0.15;
+    --glow-accent: 260 60% 55% / 0.12;
+
+    --sidebar-background: 228 15% 6%;
+    --sidebar-foreground: 210 20% 75%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 228 14% 14%;
+    --sidebar-accent-foreground: 210 20% 92%;
+    --sidebar-border: 228 12% 15%;
+    --sidebar-ring: 217 91% 60%;
+
+    --chart-1: 217 91% 60%;
+    --chart-2: 260 60% 55%;
+    --chart-3: 142 60% 45%;
+    --chart-4: 38 92% 55%;
+    --chart-5: 0 72% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-card/60 backdrop-blur-xl border border-white/[0.06];
+  }
+
+  .glass-strong {
+    @apply bg-card/80 backdrop-blur-2xl border border-white/[0.08];
+  }
+
+  .glow-primary {
+    box-shadow: 0 0 40px hsl(var(--glow-primary)), 0 0 80px hsl(var(--glow-primary));
+  }
+
+  .glow-accent {
+    box-shadow: 0 0 40px hsl(var(--glow-accent));
+  }
+
+  .gradient-primary {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+  }
+
+  .gradient-card {
+    background: linear-gradient(145deg, hsl(228 14% 13%), hsl(228 14% 10%));
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+  }
+
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--muted)) transparent;
+  }
+
+  .skeleton-shimmer {
+    @apply animate-pulse bg-muted rounded;
+  }
+}
+
+@layer components {
+  .kpi-card {
+    @apply glass rounded-xl p-5 transition-all duration-300 hover:bg-card/70 hover:border-white/[0.1] cursor-default;
+  }
+
+  .nav-item {
+    @apply flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-muted-foreground transition-all duration-200 hover:text-foreground hover:bg-secondary/80;
+  }
+
+  .nav-item-active {
+    @apply text-primary-foreground bg-primary/15 text-primary hover:text-primary hover:bg-primary/20;
+  }
+
+  .fab-button {
+    @apply fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full gradient-primary text-white shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95;
+    box-shadow: 0 4px 20px hsl(var(--glow-primary)), 0 2px 8px rgba(0,0,0,0.3);
+  }
+
+  .badge-success {
+    @apply bg-[hsl(var(--success))]/15 text-[hsl(var(--success))] border-[hsl(var(--success))]/20;
+  }
+
+  .badge-warning {
+    @apply bg-[hsl(var(--warning))]/15 text-[hsl(var(--warning))] border-[hsl(var(--warning))]/20;
+  }
+
+  .badge-destructive {
+    @apply bg-destructive/15 text-destructive border-destructive/20;
+  }
+}
