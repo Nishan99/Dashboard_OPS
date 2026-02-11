@@ -1,73 +1,185 @@
-# Welcome to your Lovable project
+🚀 OpsHub — Modern Operations Dashboard
 
-## Project info
+A premium, glassmorphism-styled, real-time operations dashboard with project management, analytics, collaboration, and communication tools — all in one place.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+✨ Overview
 
-## How can I edit this code?
+OpsHub is a modern, dark-themed operations dashboard designed for teams that need:
 
-There are several ways of editing your application.
+Real-time collaboration
 
-**Use Lovable**
+Project and task management
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Analytics and insights
 
-Changes made via Lovable will be committed automatically to this repo.
+Voice/video meetings
 
-**Use your preferred IDE**
+Team communication
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Time tracking and payments
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Built with a clean, futuristic UI inspired by Linear, Vercel, and Raycast.
 
-Follow these steps:
+🎥 Live Features (Fully Functional)
+Module	Description
+🏠 Dashboard	KPI cards, activity feed, charts, and quick insights
+👥 People	Add, edit, remove, and manage team members
+📋 Projects	Kanban board with drag-and-drop tasks
+⏱ Time Tracking	Clock in/out, productivity charts, CSV export
+📅 Calendar	Schedule and manage meetings
+💳 Payments	Invoice management and revenue analytics
+📊 Analytics	Interactive charts, heatmaps, and insights
+💬 Team Chat	Channel-based discussions and direct messages
+🎙 Voice Calls	Real-time voice call rooms
+🎥 Video Calls	WebRTC video meetings with participants grid
+🧠 Key Capabilities
+Collaboration
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Team chat channels
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Direct messaging
 
-# Step 3: Install the necessary dependencies.
-npm i
+Voice calls
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Video meetings
+
+Meeting scheduling
+
+Project Management
+
+Kanban board
+
+Task priorities
+
+Project timelines
+
+Activity feeds
+
+Analytics
+
+Line, bar, donut, and area charts
+
+Heatmaps
+
+KPI counters
+
+Comparison graphs
+
+Date range filters
+
+Productivity
+
+Clock in / clock out
+
+Timesheets
+
+Export to CSV
+
+Activity tracking
+
+Financials
+
+Invoice creation
+
+Payment tracking
+
+Revenue analytics
+
+Export reports
+
+🎨 UI/UX Highlights
+
+Dark and light themes
+
+Theme presets (Neon, Ocean, Mono)
+
+Glassmorphism panels
+
+Smooth animations
+
+Floating action buttons
+
+Responsive design (desktop, tablet, mobile)
+
+🛠 Tech Stack
+Layer	Technology
+Framework	React + Vite + TypeScript
+State	Zustand
+Routing	React Router
+Styling	TailwindCSS
+Animations	Framer Motion
+Charts	Recharts
+Drag & Drop	dnd-kit
+Calls	WebRTC
+📁 Project Structure
+src/
+ ├── components/
+ ├── pages/
+ │    ├── DashboardHome
+ │    ├── People
+ │    ├── Projects
+ │    ├── TimeTracking
+ │    ├── Calendar
+ │    ├── Payments
+ │    ├── Analytics
+ │    ├── Meetings
+ │    ├── Calls
+ │    └── Chat
+ ├── store/
+ ├── data/
+ ├── utils/
+ ├── App.tsx
+ └── main.tsx
+
+⚡ Getting Started
+1. Install dependencies
+npm install
+
+2. Start development server
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+3. Open in browser
+http://localhost:5173
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
 
-**Use GitHub Codespaces**
+The dashboard opens directly without login.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+🧪 Demo User
 
-## What technologies are used for this project?
+The system uses a default user:
 
-This project is built with:
+Name: Alex Chen
+Role: Admin
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
 
-## How can I deploy this project?
+Used for:
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Activity logs
 
-## Can I connect a custom domain to my Lovable project?
+Time tracking
 
-Yes, you can!
+Meeting creation
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Task actions
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+📤 Export Features
+
+Export timesheets → CSV
+
+Export invoices → CSV
+
+Share dashboard views via link
+
+Scheduled reports (AI module ready)
+
+🔮 Upcoming Features
+
+AI dashboard assistant
+
+Predictive analytics
+
+Anomaly detection
+
+Auto-generated reports
+
+Cloud backend integration
